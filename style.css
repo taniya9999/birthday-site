@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: white;
+  text-align: center;
+}
+
+.title {
+  margin: 20px 0;
+  color: #c40000;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Envelope */
+.envelope {
+  background: #d60000;
+  border-radius: 10px;
+  height: 140px;
+  position: relative;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 70px solid #ff4d4d;
+}
+
+/* Letter page */
+.letter-box {
+  background: white;
+  margin: 30px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.next-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #d60000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Final page */
+.final {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  color: #d60000;
+  font-weight: bold;
+}
